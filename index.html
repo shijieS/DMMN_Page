@@ -7,7 +7,7 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="shijieSun" name="author">
-  <title>Detector-free Multiple Object Tracking with Deep Motion Modeling</title>
+  <title>Simultaneous Detection and Tracking with Motion Modelling for Multiple Object Tracking</title>
 
   <!-- CSS includes -->
   <link href="./asset/bootstrap.min.css" rel="stylesheet">
@@ -32,21 +32,21 @@
   <div class="row">
     <h1>Simultaneous Detection and Tracking with Motion Modelling for Multiple Object Tracking</h1>
     <div class="authors">
-      <a href="" target="_blank">ShiJie Sun</a>,
-      <a href="" target="_blank">Naveed Aktar</a>,
-      <a href="" target="_blank">XiangYu Song</a>,
-      <a href="" target="_blank">Huansheng Song*</a>,
-      <a href="" target="_blank">Ajmal Mian</a>,
-      <a href="" target="_blank">Mubarak Shah</a>
+      <a href="https://github.com/shijieS" target="_blank">ShiJie Sun</a>,
+      <a href="https://scholar.google.com/citations?user=Xqmlj18AAAAJ&hl=en&oi=sra" target="_blank">Naveed Aktar</a>,
+      XiangYu Song,
+      Huansheng Song*,
+      <a href="https://scholar.google.com/citations?user=X589yaIAAAAJ&hl=en" target="_blank">Ajmal Mian</a>,
+      <a href="https://scholar.google.com/citations?hl=en&user=p8gsO3gAAAAJ" target="_blank">Mubarak Shah</a>
       <br><br>
 
       <p style="text-align:center;">
         <!-- <a href="" target="_blank"><img height="100"
-                                                                                   src="./CVPR2020/nthu.png"></a>
+                                                                                   src="./ECCV2020/nthu.png"></a>
         &emsp; -->
-        <a href="http://en.chd.edu.cn/" target="_blank"><img height="100" src="./CVPR2020/chd.jpg"></a>
+        <a href="http://en.chd.edu.cn/" target="_blank"><img height="100" src="./ECCV2020/chd.jpg"></a>
         &emsp;
-        <a href="http://staffhome.ecm.uwa.edu.au/~00053650/" target="_blank"><img height="100" src="./CVPR2020/uwa.png"></a>
+        <a href="http://staffhome.ecm.uwa.edu.au/~00053650/" target="_blank"><img height="100" src="./ECCV2020/uwa.png"></a>
       </p>
     </div>
   </div>
@@ -55,17 +55,17 @@
 <div class="container-fluid" id="teaser">
   <div class="row">
     <p style="text-align:center;">
-      <img height="400" src="./CVPR2020/framework.png">
+      <img height="400" src="./ECCV2020/framework.png">
     </p>
     <p style="text-align:center;">
-      <img height="400" src="./CVPR2020/DatasetDemos.png">
+      <img height="400" src="./ECCV2020/DatasetDemos.png">
     </p>
   </div>
 </div>
 
 <div class="container" id="abstract">
   <h2>Abstract</h2>
-  Deep learning based Multiple Object Tracking (MOT) currently relies on off-the-shelf detectors for tracking-by-detection. This results in deep models that are detector biased but and detector influenced evaluation. To resolve this issue, we introduce the first-of-its-kind Deep Motion Modeling Network (DMM-Net) that performs implicit detection and association of objects in an end-to-end manner. DMM-Net models object features over multiple frames and simultaneously infers object categories, visibility and their motion parameters. These outputs are readily used to update the tracklets for efficient MOT. DMM-Net achieves PR-MOTA score of 12.80 @ 120+ fps for the popular UA-DETRAC challenge - with better performance and orders of magnitude faster. We also contribute a realistic large-scale public dataset Omni-MOT for vehicle tracking that provides precise ground-truth annotations to eliminate the detector influence in MOT evaluation. This 14M+ frames dataset is extendable with a public script. We demonstrate the suitability of Omni-MOT for deep learning with DMM-Net, and also make the source code of our network public.
+  Deep learning based Multiple Object Tracking (MOT) currently relies on off-the-shelf detectors for tracking-by-detection. This results in deep models that are detector biased and evaluations that are detector influenced. To resolve this issue, we introduce Deep Motion Modeling Network (DMM-Net) that can estimate multiple objects' motion parameters to perform joint detection and association in an end-to-end manner. DMM-Net models object features over multiple frames and simultaneously infers object classes, visibility and their motion parameters. These outputs are readily used to update the tracklets for efficient MOT. DMM-Net achieves PR-MOTA score of 12.80 @ 120+ fps for the popular UA-DETRAC challenge - which is better performance and orders of magnitude faster. We also contribute a synthetic large-scale public dataset <a href="https://github.com/shijieS/OmniMOTDataset" target="_blank">Omni-MOT</a> for vehicle tracking that provides precise ground-truth annotations to eliminate the detector influence in MOT evaluation. This 14M+ frames dataset is extendable with <a href="https://github.com/shijieS/OMOTDRecorder" target="_blank">our public script</a>. We demonstrate the suitability of Omni-MOT for deep learning with DMM-Net, and also make the <a href="https://github.com/shijieS/DMMN" target="_blank">source code of our network</a> public.
 </div>
 
 <div class="container" id="video">
@@ -88,13 +88,13 @@
 <div class="container" id="dataset">
   <h2>Code & Dataset</h2>
   <!--    <p style="text-align:center;"> <img src="./ICCV2019/sports-360.png" width="100%"></p>-->
-  <p>Following resources are provided:</p>
+  <!-- <p>Following resources are provided:</p> --> 
   <div class="row" style="alignment: center">
     <div class="col-sm-3"></div>
     <div class="col-sm-3">
       <a href="https://github.com/shijieS/DMMN" target="_blank">
         <p style="text-align:center;">
-          <img src="./CVPR2020/dmmn_icons.png", height="128"><br>
+          <img src="./ECCV2020/dmmn_icons.png", height="128"><br>
           DMM-Net (GitHub)</p>
       </a>
     </div>
@@ -103,7 +103,7 @@
       <a href="https://github.com/shijieS/OmniMOTDataset"
          target="_blank">
         <p style="text-align:center;">
-          <img src="./CVPR2020/omotd_icons.png", height="128"><br>
+          <img src="./ECCV2020/omotd_icons.png", height="128"><br>
           OMOT dataset (GitHub)</p>
       </a>
     </div>
@@ -111,7 +111,7 @@
       <a href="https://github.com/shijieS/OMOTDRecorder"
          target="_blank">
         <p style="text-align:center;">
-          <img src="./CVPR2020/omotd_script_icons.png", height="128"><br>
+          <img src="./ECCV2020/omotd_script_icons.png", height="128"><br>
           OMOT Recording Script (GitHub)</p>
       </a>
     </div>
@@ -120,33 +120,28 @@
 </div>
 
 <div class="container" id="paper">
-  <h2>CVPR 2020</h2>
-  <p>Detector-free Multiple Object Tracking with Deep Motion Modeling</p>
-  <a href="" target="_blank">ShiJie Sun</a>,
-  <a href="" target="_blank">Naveed Aktar</a>,
-  <a href="" target="_blank">Ajmal Mian</a>
+  <h2>Citation</h2>
 
   <a href="https://drive.google.com/file/d/1qzYH4l0zJZXXz7eqgniaXrKS4F4FhYMC/view" target="_blank">
     <div class="thumbs">
-      <!-- <img src="./CVPR2020/thumbs-0.png"> -->
+      <!-- <img src="./ECCV2020/thumbs-0.png"> -->
     </div>
   </a>
   <div>
         <pre class="citation">@inproceedings{ShiJie20,
-  author = {shijie Sun, ...},
-  title = {Detector-free Multiple Object Tracking with Deep Motion Modeling},
-  journal = {CVPR}},
+  author = {Shijie Sun, Naveed Aktar, XiangYu Song, Huansheng Song, Ajmal Mian, Mubarak Shah},
+  title = {Simultaneous Detection and Tracking with Motion Modelling for Multiple Object Tracking},
+  journal = {ECCV}},
   year = {2020}
 }</pre>
   </div>
 
   <div class="row">
-
-    <!-- <div class="col-sm-2"></div>
+    <div class="col-sm-2"></div>
     <div class="col-sm-3">
       <a href="https://drive.google.com/file/d/1qzYH4l0zJZXXz7eqgniaXrKS4F4FhYMC/view" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/pdf.png"><br>
+          <img src="./ECCV2020/pdf.png"><br>
           Paper (High-resolution)</p>
       </a>
     </div>
@@ -154,7 +149,7 @@
     <div class="col-sm-2">
       <a href="https://drive.google.com/file/d/1wNVOPg2dmjh6FMLa9b3X-8Bvb2DaRzOx/view" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/pdf.png"><br>
+          <img src="./ECCV2020/pdf.png"><br>
           Supplementary (High-resolution)</p>
       </a>
     </div>
@@ -162,31 +157,31 @@
     <div class="col-sm-3">
       <a href="https://arxiv.org/abs/1811.10742" target="_blank">
         <p style="text-align:center;">
-          <img src="./ICCV2019/pdf.png"><br>
+          <img src="./ECCV2020/pdf.png"><br>
           Paper (ArXiv)</p>
       </a>
     </div>
-    <div class="col-sm-2"></div> -->
+    <div class="col-sm-2"></div>
   </div>
 
 
   <div class="container" id="acknowledgement">
     <h2>Acknowledgements</h2>
     <p style="text-align:center;">
-      <a href="https://www.most.gov.tw/en/public" target="_blank">
-        <img height="100" src="./CVPR2020/chd.jpg">
+      <a href="http://en.chd.edu.cn/" target="_blank">
+        <img height="100" src="./ECCV2020/chd.jpg">
       </a>
-      <a href="https://www.most.gov.tw/en/public" target="_blank">
-        <img height="100" src="./CVPR2020/uwa.png">
+      <a href="https://www.uwa.edu.au/" target="_blank">
+        <img height="100" src="./ECCV2020/uwa.png">
       </a>
-      <a href="https://deepdrive.berkeley.edu/" target="_blank">
-        <img height="50" src="./CVPR2020/carla.png">
+      <a href="https://carla.org/" target="_blank">
+        <img height="100" src="./ECCV2020/carla.png">
       </a>
-      <a href="https://bair.berkeley.edu/" target="_blank">
-        <img height="50" src="./CVPR2020/nvidia.png">
+      <a href="https://www.nvidia.com/en-us/" target="_blank">
+        <img height="100" src="./ECCV2020/nvidia.jpg">
       </a>
-      <a href="https://bair.berkeley.edu/" target="_blank">
-        <img height="50" src="./CVPR2020/pytorch.png">
+      <a href="https://pytorch.org/" target="_blank">
+        <img height="100" src="./ECCV2020/pytorch.png">
       </a>
     </p>
   </div>
